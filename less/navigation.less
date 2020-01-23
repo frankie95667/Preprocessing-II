@@ -1,1 +1,22 @@
 // Navigation Styles here
+header {
+    nav {
+        border-bottom: 2px dashed @navigation-border;
+        padding: 1% 0;
+        .container {
+            .flex(row, space-between, center);
+            width: 100%;
+
+            .links {
+                .flex(row, space-around, center);
+                width: 40%;
+            }
+            
+            a {
+                text-decoration: none;
+                font-size: 1.6rem;
+                color: @font-color;
+            }
+        }
+    }
+}
