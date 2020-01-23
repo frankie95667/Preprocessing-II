@@ -1,13 +1,21 @@
 // Navigation Styles here
 header {
     nav {
+        
         border-bottom: 2px dashed @navigation-border;
         padding: 1% 0;
         .container {
+            @media @mobile {
+                flex-direction: column;
+                margin-top: 3%;
+            }
             .flex(row, space-between, center);
             width: 100%;
 
             .links {
+                @media @mobile {
+                    width: 100%;
+                }
                 .flex(row, space-around, center);
                 width: 40%;
             }
